@@ -20,6 +20,7 @@ jobs:
         with:
           node-version: '24'
           cache: npm
+          cache-dependency-path: using-actions/react-with-github-actions/package-lock.json
 
       # 2. Install dependency of React app
       - name: Install Dependencies
