@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: using-actions/react-with-github-actions
+        working-directory: ./react-with-github-actions
 
     steps:
       # 1. Checkout the code from repository
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '24'
           cache: npm
-          cache-dependency-path: using-actions/react-with-github-actions/package-lock.json
+          cache-dependency-path: ./react-with-github-actions/package-lock.json
 
       # 2. Install dependency of React app
       - name: Install Dependencies
