@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./react-with-github-actions
+        working-directory: react-with-github-actions
 
     steps:
       # 1. Checkout the code from repository
